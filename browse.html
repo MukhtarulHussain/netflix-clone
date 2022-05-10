@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Browse</title>
+    <link rel="stylesheet" href="browse.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <a href="index.html"
+        ><img class="nav__logo" src="images/netflix-logo.png" alt=""
+      /></a>
+      <div class="nav-subcontent">
+        <h3><a href="#series">Series</a></h3>
+        <h3><a href="#flims">Films</a></h3>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Doctor Strange in the Multiverse of Madness</h1>
+
+        <h1 class="banner__description">
+          Dr Stephen Strange casts a forbidden spell that opens a portal to the multiverse.
+          However, a threat emerges that may be too big for his team to handle.
+        </h1>
+
+        <div id="light">
+          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+          <video id="VisaChipCardVideo" controls>
+            <source
+              src="Marvel Studios' Doctor Strange in the Multiverse of Madness Official Trailer.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+        <div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        </div>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row1">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie1.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie2.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie3.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie4.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie5.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie6.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie7.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie8.jpg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="description hide">
+        <p>
+          Operation Mincemeat is set in 1943 as the Allies are determined to launch an all-out assault on Fortress Europe.
+          But they face an impossible challenge - to protect a massive invasion force from entrenched German firepower and avert a potential massacre.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/large-movie1.jpg" alt="" />
+
+      </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row2">
+      <h2 id="series">Trending Series</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/black.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/mai.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/bridge.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/marked.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/ozark.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/anatomy.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/business.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/falling.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/allofusaredead.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/happy.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/sexeducation.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/selling.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description1 hide">
+        <p>
+          Hundreds of British soldiers lie dead in a forest… the Royal Navy sails back to England…
+          the West Indies are now a war zone, and the shores of New Providence Island have never been bloodier. With the help of Eleanor Guthrie,
+          Woodes Rogers transforms Nassau into a fortress, as Captain Flint amasses a fleet of unprecedented strength,
+          hoping to strike the final blow and reshape the world forever.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/black.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row3">
+      <h2>Drama</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/365.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Gangubai.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Dasvi.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ozark.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/raatakelihai.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Narcosmexico.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/vanchi.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ghostb.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/83.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/impossible.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/mystry.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/look.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/sonic.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/king.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description2 hide">
+        <p>
+          Laura and Massimo attempt to piece their lives back together following the inter-mafia conflict.
+          However, Massimo's family ties and a mysterious man bidding for Laura's heart complicate the lovers' lives.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/365.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row3">
+      <h2 id="flims">Action Movies</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/strange.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/extraction.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/gunjansaxena.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description8 hide">
+        <p>
+          In Marvel Studios' "Doctor Strange in the Multiverse of Madness,"
+          the MCU unlocks the Multiverse and pushes its boundaries further than ever before.
+          Journey into the unknown with Doctor Strange, who,
+          with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/strange.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+    <div class="row4">
+      <h2>Comedy Movies</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/hangover.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/minnal.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/rednotice.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/comd1.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/comd2.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/comd3.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/comd4.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/comd5.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description4 hide">
+        <p>
+          After the bachelor party in Las Vegas two years ago, Phil, Stu, Alan,
+          and Doug head to Thailand for Stu's wedding.
+          However, things go awry when Stu's soon-to-be brother-in-law goes missing.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/hangover.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Horror Movies -->
+    <div class="row5">
+      <h2>Horror Movies</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror1.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror2.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror3.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror4.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror5.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror6.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror7.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror8.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description5 hide">
+        <p>
+          nfluencers looking to breathe new life into a Texas ghost town encounter Leatherface,
+          the legendary killer who wears a mask of human skin.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/horror1.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Romance Movies -->
+    <div class="row6">
+      <h2>Romance Movies</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom1.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom2.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom3.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom4.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom5.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom6.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom7.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/rom8.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description6 hide">
+        <p>
+          Infamous palmist Vikramaditya finds love when he meets Prerana, a doctor.
+          However, their relationship is threatened when he refuses to marry
+          her and she gets diagnosed with a terminal disease.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/rom1.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Documentaries -->
+    <div class="row7">
+      <h2>Documentaries</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc1.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc2.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc3.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc4.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc5.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc6.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc7.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/doc8.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description7 hide">
+        <p>
+          An examination of the truths and theories surrounding the
+          deaths of 11 members of a Delhi family.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/doc1.jpg" alt="" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Questions? Call 1-866-579-7172</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Ways To Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Redeem Gift Cards</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Buy Gift Cards</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="browse.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
